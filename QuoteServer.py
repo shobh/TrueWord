@@ -9,10 +9,10 @@ app = Flask(__name__)
 
 SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
 json_url = os.path.join(SITE_ROOT, 'buddha-quotes.json')
-data = yaml.load(open(json_url))
+data = json.load(open(json_url))
 
 json_url2 = os.path.join(SITE_ROOT, 'marcus-aurelius-quotes.json')
-data2 = yaml.load(open(json_url2))
+data2 = json.load(open(json_url2))
 
 
 
